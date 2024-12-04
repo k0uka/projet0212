@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.back-to-pixel-festival.fr/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://www.restyle.fr/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Page dees catégories d'articles -->
+  <url>
+    <loc>https://www.restyle.fr/categoriearticle</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+ <!-- Page d'annonce-->
+  <url>
+    <loc>https://www.restyle.fr/annonce</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+ <!-- Page de connexion -->
+  <url>
+    <loc>https://www.restyle.fr/connexion</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+ <!-- Page de profil -->
+  <url>
+    <loc>https://www.restyle.fr/profil</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+
+  <!-- Page de favoris -->
+  <url>
+    <loc>https://www.restyle.fr/favoris</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+   
+  <!-- Politique de confidentialité -->
+  <url>
+    <loc>https://www.restyle.fr/politique-de-confidentialité</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://www.restyle.fr/mentions-légales</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>

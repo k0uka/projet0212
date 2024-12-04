@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,120 +10,245 @@
 <body>
 
     <!-- div -->
-<input type="radio" name="Photos" id="check1" checked>
-<input type="radio" name="Photos" id="check2" checked>
-<input type="radio" name="Photos" id="check3" checked>
-<input type="radio" name="Photos" id="check4" checked>
-<input type="radio" name="Photos" id="check5" checked>
 
+    <input type="radio" name="buttons" id="r1">
+    <input type="radio" name="buttons" id="r2">
+    <input type="radio" name="buttons" id="r3">
+    <input type="radio" name="buttons" id="r4">
+    <input type="radio" name="buttons" id="r5" checked>
+
+<div class="controls">
+  <label for="r1">Bijoux</label>
+  <label for="r2">Chaussures</label>
+  <label for="r3">Sacs</label>
+  <label for="r4">Vêtements</label>
+  <label for="r5">Tout</label>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</div>
 
 <div class="container">
-    <h1>Article disponibles :</h1>
-    <div class="top-content">
-        <label for="check1">Tout les articles</label>
-        <label for="check2">Vêtements</label>
-        <label for="check3">Bijoux</label>
-        <label for="check4">Accessoires</label>
-        <label for="check5">Sacs</label>
-        <form class="d-flex ms-auto" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+<section>
+  <div class="row row-cols-1 row-cols-md-4 g-2">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/bijou.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
     </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/bijou1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/bijou2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/collierchat.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="photo-gallery">
-    <div class="pic vetement">
-        <img src="../img/gilet.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
+</section>
 
+<section>
+  <div class="row row-cols-1 row-cols-md-4 g-2">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/chaussure2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
     </div>
-    <div class="pic vetement">
-        <img src="../img/pullblanc.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/chaussures.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/chaussures1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/chaussures3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section>
+  <div class="row row-cols-1 row-cols-md-4 g-2">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/sac.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
     </div>
-    <div class="pic vetement">
-        <img src="../img/sweatrose.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/sac2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/sac3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/sac4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section>
+  <div class="row row-cols-1 row-cols-md-4 g-2">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/vetement.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
     </div>
-    <div class="pic vetement">
-        <img src="../img/vetement.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/gilet.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/pullblanc.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/sweatrose.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a class="btn btn-primary" href="../html/annoncesac.html" role="button">Ajouter aux favoris.</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </div>
-    <div class="pic sac">
-        <img src="../img/sac.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-
-    </div>
-    <div class="pic sac">
-        <img src="../img/sac2.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-
-    </div>
-    <div class="pic sac">
-        <img src="../img/sac3.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-
-    </div>
-    <div class="pic sac">
-        <img src="../img/sac4.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-    </div>
-    <div class="pic bijou">
-        <img src="../img/bijou.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-
-    </div>
-    <div class="pic bijou">
-        <img src="../img/bijou1.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-
-    </div>
-    <div class="pic bijou">
-        <img src="../img/bijou2.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-
-    </div>
-    <div class="pic bijou">
-        <img src="../img/collierchat.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-    </div>
-    <div class="pic chaussure">
-        <img src="../img/chaussures.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-    </div>
-    <div class="pic chaussure">
-        <img src="../img/chaussure2.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-    </div>
-    <div class="pic chaussure">
-        <img src="../img/chaussures3.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-    </div>
-    <div class="pic chaussure">
-        <img src="../img/chaussures1.jpg">
-        <div class="desc">Collier - 18€</div>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-    </div>
 </div>
-</div>
+
 
 
 <!-- fin div -->

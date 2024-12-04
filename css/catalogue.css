@@ -2,140 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
-/* debut div et checked */
+
+.container{
+    margin-top: 110px;
+    
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit, 300px);
+    justify-content: center;
+    
+}
+
+.container > section > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
 input{
     display: none;
 }
 
-.container{
+.controls
+{
+    height: 50px;
     width: 100%;
     text-align: center;
+    background: #333;
 }
 
-h1{
-    font-weight: normal;
-    font-size: 35px;
-    position: relative;
-    margin: 40px 0;
-}
-
-
-.top-content{
-    background-color: lightgray;
-    width: 90%;
-    margin: 0 auto 20px auto;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px lightgray;
-}
-
-p{
-    height: 100%;
-    background-color: lightgray;
-    line-height: 60px;
-    padding: 0 50px;
-    color: white;
-}
-
-label{
-    display: inline-block;
-    height: 100%;
-    margin: 0 20px;
-    line-height: 60px;
-    font-size: 18px;
-    color: gray;
-    cursor: pointer;
-    transition: color .5s;
-}
-
-label:hover{
-    color: black;
-}
-
-.photo-gallery{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 70px;
+.controls > label{
+    line-height: 50px;
+    font-size: 20px;
+    background: white;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 10px;
     cursor: pointer;
 }
 
-.pic{
-    position: relative;
-    height: 230px;
-    border-radius: 10px;
+#r1:checked ~ .container > section:not(:nth-child(1)),
+#r2:checked ~ .container > section:not(:nth-child(2)),
+#r3:checked ~ .container > section:not(:nth-child(3)),
+#r4:checked ~ .container > section:not(:nth-child(4))
+{
+    display: none;
 }
 
-.pic img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+#r1:checked ~ .controls > label:nth-child(1),
+#r2:checked ~ .controls > label:nth-child(2),
+#r3:checked ~ .controls > label:nth-child(3),
+#r4:checked ~ .controls > label:nth-child(4),
+#r5:checked ~ .controls > label:nth-child(5){
+    background: tomato;
+    color: blue;
 }
-
-#check1:checked ~ .container .photo-gallery .pic{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-
-#check2:checked ~ .container .photo-gallery .sac{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-
-#check2:checked ~ .container .photo-gallery .sac,
-#check2:checked ~ .container .photo-gallery .bijou,
-#check2:checked ~ .container .photo-gallery .chaussure{
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-}
-
-#check3:checked ~ .container .photo-gallery .vetement{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-
-#check3:checked ~ .container .photo-gallery .vetement,
-#check3:checked ~ .container .photo-gallery .sac,
-#check3:checked ~ .container .photo-gallery .chaussure{
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-}
-
-#check4:checked ~ .container .photo-gallery .vetement{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-
-#check4:checked ~ .container .photo-gallery .vetement,
-#check4:checked ~ .container .photo-gallery .sac,
-#check4:checked ~ .container .photo-gallery .bijou{
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-}
-
-#check5:checked ~ .container .photo-gallery .vetement{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-
-#check5:checked ~ .container .photo-gallery .vetement,
-#check5:checked ~ .container .photo-gallery .bijou,
-#check5:checked ~ .container .photo-gallery .chaussure{
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-}
-/* fin de div */
