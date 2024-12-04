@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*NAV*/
+.navbar-brand {
+    width: 2.5em;
+    height: auto;
+    margin-left: -30px;
+}
+.navbar{
+    background-color: white!important;
+    height: 75px;
+    margin: 20px;
+    border-radius: 30px!important;
+    padding: 0.5rem;
+}
+
+.login-button {
+    background-color: #FFC0D9!important;
+    color: black;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: blue!important;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size:1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+
+}
+
+.nav-link {
+    color: darkgray;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active:hover {
+    color: black;
+}
+
+.nav-link::before {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #FFC0D9!important;
+    visibility: invisible;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+    width: 50%;
+    visibility: visible;
+}
+
+.form-control {
+    border: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+}
+/*FIN NAV*/
+
+/*HERO SECTION*/
+.parallax-section {
+    background: url('/img/Accueil/Fond.png') no-repeat center center/cover;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 300px;
+    padding-top: 200;
+}
+
+
+.hero-section{
+    content: '';
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 80px;
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    height: 300px;
+    top: -10px;
+    left: -10px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+/*FIN HERO SECTION*/
+.bannier-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.img-resizer {
+    width: 85rem;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/*PRODUIT CATEGORIES*/
+.custom-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Ombre plus intense */
+}
+
+.custom-card img {
+    height: 300px;
+    object-fit: cover; /* Assure que l'image couvre bien la zone sans se déformer */
+}
+
+.card-title {
+    font-weight: bold;
+    color: #343a40; /* Couleur foncée pour le titre */
+}
+
+.card-text {
+    color: #6c757d; /* Couleur de texte gris foncé */
+}
+
+.custom-btn {
+    background-color: #007bff; /* Couleur bleue personnalisée */
+    color: white;
+    border-radius: 30px; /* Bouton arrondi */
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+}
+/*FIN PRODUIT CATEGORIES*/
+
+.newsletter-section {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.newsletter-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.newsletter-section form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-section input[type="email"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.newsletter-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-section button:hover {
+    background-color: #e6b800;
+}
+
+.newsletter-section small {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+}
