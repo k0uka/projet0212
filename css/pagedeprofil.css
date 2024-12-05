@@ -3,12 +3,92 @@
     padding: 0;
 }
 
-.card-header{
-    margin-left: 150px;
+body{
+  background-color: #ffaec9;
 }
 
+.navbar-brand {
+  width: 2.5em;
+  height: auto;
+  margin-left: -30px;
+}
 
+.navbar {
+  background-color: #ffffff !important;
+  height: 75px;
+  margin: 20px;
+  border-radius: 30px !important;
+  padding: 0.5rem;
+}
 
+.login-button {
+  background-color: #ffaec9 !important;
+  color: black;
+  border: solid #000000;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: black !important;
+  color: #ffaec9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+
+}
+
+.nav-link {
+  color: darkgray;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active:hover {
+  color: black;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #FFC0D9 !important;
+  visibility: invisible;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 50%;
+  visibility: visible;
+}
+
+.form-control {
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
 
 
 footer {
