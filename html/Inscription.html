@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription et Connexion</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 500px;
+            height: 500px;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tab-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab-buttons label {
+            cursor: pointer;
+            font-weight: bold;
+            color: #007bff;
+            padding: 10px;
+            text-align: center;
+            flex: 1;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        .form-section {
+            display: none;
+        }
+        #tab-inscription:checked ~ #inscription-form,
+        #tab-connexion:checked ~ #connexion-form {
+            display: block;
+        }
+        .form-section {
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;  /* Réduction des marges */
+            }
+            .tab-buttons label {
+                padding: 8px;  /* Plus petit padding pour les onglets */
+            }
+            .btn {
+                font-size: 14px;  /* Taille de bouton réduite */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Onglets pour basculer entre les formulaires -->
+        <div class="tab-buttons">
+            <label for="tab-inscription">Inscription</label>
+            <label for="tab-connexion">Connexion</label>
+        </div>
+
+        <!-- Boutons radio invisibles pour gérer les formulaires -->
+        <input type="radio" id="tab-inscription" name="form-tab" checked>
+        <input type="radio" id="tab-connexion" name="form-tab">
+
+        <!-- Formulaire d'inscription -->
+        <div id="inscription-form" class="form-section">
+            <h3 class="text-center">Inscription</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="register-name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="register-name" placeholder="Votre nom" required>
+                </div>
+                <div class="mb-3">
+                    <label for="register-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="register-email" placeholder="Votre email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="register-password" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="register-password" placeholder="Mot de passe" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+            </form>
+        </div>
+
+        <!-- Formulaire de connexion -->
+        <div id="connexion-form" class="form-section">
+            <h3 class="text-center">Connexion</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="login-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="login-email" placeholder="Votre email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="login-password" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Mot de passe" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+                <div class="text-center mt-3">
+                    <a href="#" class="text-decoration-none">Réinitialiser le mot de passe</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
