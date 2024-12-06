@@ -2,13 +2,20 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #ffaec9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Faire en sorte que le body occupe au moins la hauteur de la page */
 }
+
 h1 {
     text-decoration: underline;
     font-weight: bold;
 }
+
 /*NAV*/
 .navbar-brand {
     width: 2.5em;
@@ -93,13 +100,136 @@ h1 {
     outline: none;
 }
 
+/* Media Query pour mobile */
+@media (max-width: 576px) {
+    .navbar-brand {
+        width: 2.5em;
+        margin-left: 0;
+        /* Évite l'espacement supplémentaire */
+    }
+
+    .navbar-toggler {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        /* Ajuste la taille de la police des liens */
+        padding: 10px 0;
+        /* Ajuste le padding */
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px 20px;
+        margin-top: 15px;
+    }
+}
+
+/* Media Query pour tablettes */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px;
+        height: 75px;
+        /* La hauteur reste la même pour les tablettes */
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        /* Centre les liens */
+        width: 100%;
+        margin-left: 0;
+        /* Évite l'espacement supplémentaire */
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+/* Media Query pour desktop */
+@media (min-width: 769px) {
+    .navbar {
+        padding: 0.5rem 20px;
+        margin: 20px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        /* Positionne les éléments à droite */
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 10px 20px;
+        /* Espacement des liens */
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+}
+
 /*FIN NAV*/
 
+/* Styles par défaut pour la favorites-container */
 .favorites-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 7%;
+    height: 100vh;
+}
+
+/* Mobile - max-width: 576px */
+@media (max-width: 576px) {
+    .favorites-container {
+        margin-top: 30%;
+        padding: 5px;
+    }
+}
+
+/* Tablette - max-width: 768px (inclus) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .favorites-container {
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .favorites-container h2 {
+        font-size: 20px;
+        /* Taille de police modérée pour la tablette */
+        text-align: center;
+        /* Centrer le titre sur tablette */
+    }
+
+    .favorites-container .item {
+        margin-bottom: 20px;
+        /* Espacement ajusté pour tablette */
+    }
+}
+
+/* Bureau - min-width: 769px */
+@media (min-width: 769px) {
+    .favorites-container {
+        margin-top: 7%;
+    }
 }
 
 .favorite-item {
@@ -156,6 +286,7 @@ h1 {
     color: #ffaec9;
     font-weight: bold;
 }
+
 /*FOOTER*/
 footer {
     background-color: black;
@@ -164,6 +295,7 @@ footer {
     margin-top: auto;
     list-style-type: none;
     margin-top: auto;
+    max-height: auto;
 }
 
 .footer-container {
@@ -220,6 +352,44 @@ a:hover {
 
 .social-media .icons a:hover {
     color: #ffaec9;
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        height: 100%;
+        /* Assurez-vous que le body prend toute la hauteur */
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-grow: 1;
+        /* Le contenu occupe tout l'espace restant */
+    }
+
+    footer {
+        margin-top: auto;
+        /* Le footer se place en bas */
+        padding: 15px;
+    }
+
+    /* Ajustement de la disposition du footer pour les tablettes */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        /* Centrer le contenu */
+    }
+
+    /* Réduire la taille des icônes sur tablette */
+    .social-media .icons a {
+        font-size: 20px;
+    }
 }
 
 /*FIN FOOTER*/

@@ -101,9 +101,86 @@ h2 {
     outline: none;
 }
 
+/* Media Query pour mobile */
+@media (max-width: 576px) {
+    .navbar-brand {
+        width: 2.5em;
+        margin-left: 0; /* Évite l'espacement supplémentaire */
+    }
+
+    .navbar-toggler {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 14px; /* Ajuste la taille de la police des liens */
+        padding: 10px 0; /* Ajuste le padding */
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px 20px;
+        margin-top: 15px;
+    }
+}
+
+/* Media Query pour tablettes */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px;
+        height: 75px; /* La hauteur reste la même pour les tablettes */
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center; /* Centre les liens */
+        width: 100%;
+        margin-left: 0; /* Évite l'espacement supplémentaire */
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+/* Media Query pour desktop */
+@media (min-width: 769px) {
+    .navbar {
+        padding: 0.5rem 20px;
+        margin: 20px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-end; /* Positionne les éléments à droite */
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 10px 20px; /* Espacement des liens */
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
 /*FIN NAV*/
 
 /*HERO SECTION*/
+/* Parallax Section */
 .parallax-section {
     background: url('/img/Accueil/Fond.png') no-repeat center center/cover;
     height: 100vh;
@@ -111,35 +188,133 @@ h2 {
     background-attachment: fixed;
     background-position: center;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
     color: black;
     text-align: center;
-    padding: 300px;
-    padding-top: 200;
+    padding: 100px 20px; /* Ajuste le padding pour les petits écrans */
 }
 
-
+/* Hero Section */
 .hero-section {
-    content: '';
     border-radius: 10px;
     position: relative;
     display: inline-block;
-    padding: 80px;
+    padding: 30px 40px; /* Réduit l'espacement interne */
     background-color: rgb(255, 255, 255);
     border: 5px solid black;
-    width: 450px;
-    height: 300px;
-    top: -10px;
-    left: -10px;
-    margin-top: 100px;
+    width: 100%; /* 100% de largeur pour s'ajuster */
+    max-width: 450px; /* Limite la largeur maximale */
+    height: auto; /* Hauteur auto pour ajuster */
+    margin: 0 auto;
+    box-sizing: border-box; /* Inclut les bordures dans la taille de l'élément */
     overflow: hidden;
 }
 
-.parallax-section-2 {
-    background-color: #ffaec9;
-    height: 500px;
+.hero-section h1 {
+    font-size: 2.5rem; /* Taille de texte principale */
+    margin-bottom: 20px;
+}
 
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-section button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    background-color: #ffaec9;
+    color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-section button:hover {
+    background-color: black;
+    color: #ffaec9;
+}
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 576px) {
+    .parallax-section {
+        padding: 80px 10px; /* Ajuste le padding pour mobile */
+    }
+
+    .hero-section {
+        padding: 20px; /* Réduit l'espace interne de la section */
+        width: 90%; /* Réduit la largeur de la section */
+        max-width: 100%; /* Permet à la section de s'adapter à l'écran */
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem; /* Taille de texte plus petite pour mobile */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* Ajuste la taille du texte */
+    }
+
+    .hero-section button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Tablette */
+@media (min-width: 577px) and (max-width: 768px) {
+    .parallax-section {
+        padding: 100px 20px; /* Réduit légèrement l'espacement */
+    }
+
+    .hero-section {
+        padding: 30px;
+        width: 80%;
+        max-width: 500px; /* Largeur ajustée pour tablette */
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .hero-section button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
+
+/* Bureau */
+@media (min-width: 769px) {
+    .parallax-section {
+        padding: 150px 40px; /* Espacement plus large pour bureau */
+    }
+
+    .hero-section {
+        padding: 30px;
+        width: 50%;
+        max-width: 450px; /* Largeur fixe pour bureau */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .hero-section button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
 }
 
 /*FIN HERO SECTION*/

@@ -54,8 +54,11 @@ input[type="radio"] {
 
 .form-label {
     font-weight: 400;
+    text-decoration: none;
 }
-
+label {
+    text-decoration: underline;
+}
 input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
     border-radius: 5px;
 }
